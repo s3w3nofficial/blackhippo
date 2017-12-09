@@ -12535,7 +12535,7 @@
   },
   "packageFolders": {
     "/home/s3w3n/.nuget/packages/": {},
-    "/home/s3w3n/dotnet/sdk/NuGetFallbackFolder": {}
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -12547,7 +12547,7 @@
       "outputPath": "/home/s3w3n/Documents/GitProjects/blackhippo/blackhippo/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/home/s3w3n/dotnet/sdk/NuGetFallbackFolder"
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "/home/s3w3n/.nuget/NuGet/NuGet.Config"
@@ -12574,7 +12574,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0",
+            "version": "2.0.0",
             "autoReferenced": true
           },
           "Microsoft.AspNetCore.All": {
