@@ -32,7 +32,9 @@ gulp.task('clean', function() {
 gulp.task("build", ['minifyScripts', 'minifyCss'], function() {
 });
 
-//Watch task
-gulp.task('default',function() {
-    gulp.watch(['wwwroot/css/*.scss', 'wwwroot/js/*.js'], ['clean'], ['build']);
+gulp.task('watch', function() {
+    gulp.watch('wwwroot/css/*.scss', ['minifyCss']);
+    gulp.watch('wwwroot/js/*.js', ['minifyScripts']);
 });
+//Watch task
+gulp.task('default', ['clean', 'build', 'watch']);
