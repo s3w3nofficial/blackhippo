@@ -29,12 +29,20 @@ gulp.task('clean', function() {
     del(['wwwroot/css/site.css', 'wwwroot/css/site.min.css', 'wwwroot/js/site.min.js*']);
 });
 
+gulp.task('cleanCss', function() {
+    del(['wwwroot/css/site.css', 'wwwroot/css/site.min.css']);
+});
+
+gulp.task('cleanJs', function(){
+    del(['wwwroot/js/site.min.js*']);
+})
+
 gulp.task("build", ['minifyScripts', 'minifyCss'], function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('wwwroot/css/*.scss', ['minifyCss']);
-    gulp.watch('wwwroot/js/*.js', ['minifyScripts']);
+    gulp.watch('wwwroot/css/*.scss', ['cleanCss', 'minifyCss']);
+    gulp.watch('wwwroot/js/*.js', ['cleanJs', 'minifyScripts']);
 });
 //Watch task
 gulp.task('default', ['clean', 'build', 'watch']);

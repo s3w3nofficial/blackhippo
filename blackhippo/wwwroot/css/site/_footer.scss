@@ -1,0 +1,26 @@
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    P {
+        padding: 40px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .contactus {
+
+        .row {
+            padding-bottom: 5px;
+
+            input {
+                margin: 5px 0;
+            }
+        }
+
+    }
+
+}
