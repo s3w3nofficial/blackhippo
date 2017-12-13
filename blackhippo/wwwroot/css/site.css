@@ -58,7 +58,7 @@ header {
     background-color: rgba(0, 0, 0, 0.829);
     color: #fff; }
   .body-content .eshop {
-    background-image: url(http://freeuse.io/img_highres/3188-snow-black-and-white-mountains.jpg);
+    background-image: url("/images/background.jpg");
     background-size: cover;
     background-position-y: center; }
     .body-content .eshop .row {
@@ -147,7 +147,7 @@ header {
       width: 100%;
       position: absolute; }
   .body-content .contactus {
-    background-image: url(http://freeuse.io/img_highres/3188-snow-black-and-white-mountains.jpg);
+    background-image: url("/images/background.jpg");
     background-size: cover;
     background-attachment: fixed; }
     .body-content .contactus .form-control:focus {
