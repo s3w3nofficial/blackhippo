@@ -9,137 +9,180 @@
         background-color: rgba(0, 0, 0, 0.829);
         color: #fff;
     }
-}
 
-.row {
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
+    .eshop {
+        background-image: url(http://freeuse.io/img_highres/3188-snow-black-and-white-mountains.jpg);
+        background-size: cover;
+        background-position-y: center;
 
-.col-md-3:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-    transition: box-shadow 0.5s;
-}
+        .row {
+            padding-top: 50px;
+            padding-bottom: 30px;
 
-.block {
-    background: #fff;
-    border: 1px solid #fff;
-    padding: 10px;
-    color: rgba(0, 0, 0, 0.829);
-    margin: 0 2px;
-}
+            .block {
+                background: #fff;
+                border: 1px solid #fff;
+                padding: 10px;
+                color: rgba(0, 0, 0, 0.829);
+                margin: 0 2px;
 
-.top {
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 10px;
-  }
-  .top ul {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 0;
-  }
-  .top a {
-    color: #9e9e9e;
-  }
-  .top a:hover {
-    color: #c7ccdb;
-  }
-  .converse {
-    padding: 2px 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    font-size: 14px;
-  }
-  .middle {
-    margihero-text {
-        padding-top: 125px;
-    }n-bottom: 40px;
-  }
-  .middle img {
-    width: 100%;
-  }
-  .bottom {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-  .heading {
-    font-size: 17px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    letter-spacing: 0;
-  }
-  .info {
-    font-size: 14px;
-    color: #969696;
-    margin-bottom: 10px;
-  }
-  .style {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  .old-price {
-    color: #f00;
-    text-decoration: line-through;
-  }
+                .top {
+                    border-bottom: 1px solid #e5e5e5;
+                    padding-bottom: 10px;
 
-.view-more-products {
-    margin: 0 auto;
-    background-color: #fff !important;
-    border-color: #fff!important;
-    color: rgba(0, 0, 0, 0.829);
-  }
+                    ul {
+                        list-style: none;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        padding: 0;
 
-.view-more-products:hover {
-    background-color: black !important;
-    border-color: black!important;
-    color: #fff;
-}
+                        a {
+                            color: #9e9e9e;
+                        }
 
-@media only screen and (max-width: 768px) {
-    
-    .block {
-        margin: 10px 2px;
+                        a:hover {
+                            color: #c7ccdb;
+                        }
+                    }
+
+                    .converse {
+                        padding: 2px 10px;
+                        border-radius: 20px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                    }
+                }
+
+                .middle {
+
+                    .hero-text {
+                        padding-top: 125px;
+                    }
+        
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .bottom {
+                    text-align: center;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
+                    -webkit-box-flex: 1;
+                        -ms-flex-positive: 1;
+                            flex-grow: 1;
+                  }
+                  .heading {
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                    letter-spacing: 0;
+                  }
+                  .info {
+                    font-size: 14px;
+                    color: #969696;
+                    margin-bottom: 10px;
+                  }
+                  .style {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                  }
+                  .old-price {
+                    color: #f00;
+                    text-decoration: line-through;
+                  }
+                
+                .view-more-products {
+                    margin: 0 auto;
+                    background-color: #fff !important;
+                    border-color: #fff!important;
+                    color: rgba(0, 0, 0, 0.829);
+                  }
+                
+                .view-more-products:hover {
+                    background-color: black !important;
+                    border-color: black!important;
+                    color: #fff;
+                }
+            }
+        }
     }
-
-}
-
-.map {
-    overflow: hidden;
-    padding-bottom: 30%;
-    position: relative;
-    height: 0;
-
-    iframe {
-        border: 0;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
-}
-
-@media only screen and (max-width: 768px) {
     
     .map {
-        padding-bottom: 50%;
+        overflow: hidden;
+        padding-bottom: 30%;
+        position: relative;
+        height: 0;
+    
+        iframe {
+            border: 0;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
     }
+    
+    .contactus {
+        background-image: url(http://freeuse.io/img_highres/3188-snow-black-and-white-mountains.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    
+        .form-control:focus {
+            border-color: #495057 !important;
+            color: black;
+        }
 
+        textarea {
+            margin-top: 15px;
+        }
+    
+        input, textarea {
+            background: rgba(255, 255, 255, 0.9);
+        }
+    
+        input:focus, textarea:focus {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);    
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .body-content {
+
+        .eshop {
+            background-attachment: scroll;
+    
+            .block {
+                margin: 10px 2px;
+            }
+        }
+    
+        .map {
+            padding-bottom: 50%;
+        }
+    
+        .contactus {
+            
+            textarea {
+                margin-top: 0;
+            }
+    
+        }
+    }
 }
