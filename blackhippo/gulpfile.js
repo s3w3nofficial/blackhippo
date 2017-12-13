@@ -45,4 +45,4 @@ gulp.task('watch', function() {
     gulp.watch('wwwroot/js/*.js', ['cleanJs', 'minifyScripts']);
 });
 //Watch task
-gulp.task('default', ['clean', 'build', 'watch']);
+gulp.task('default', ['clean', 'build']);

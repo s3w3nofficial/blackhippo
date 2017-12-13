@@ -43,6 +43,10 @@ namespace blackhippo
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    name: "eshop",
+                    template: "{controller=Eshop}/{action=Index}/{id?}");
             });
         }
     }

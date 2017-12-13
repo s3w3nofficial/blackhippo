@@ -35,10 +35,7 @@
                             <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a asp-area="" asp-controller="Home" asp-action="About" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-area="" asp-controller="Home" asp-action="Contact" class="nav-link">Contact</a>
+                            <a asp-area="" asp-controller="Eshop" asp-action="Index" class="nav-link">Eshop</a>
                         </li>
                     </ul>
                 </div>
@@ -57,6 +54,28 @@ and get attention right away!</h1>
 
     <div class="body-content">
         @RenderBody()
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <div class="contactus">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-control" type="text" placeholder="Your name">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control" type="text" placeholder="Your name">
+                        </div>
+                    </div>
+
+                    <textarea class="form-control" rows="10" placeholder="Enter your message here"></textarea>
+                </form>
+            </div>
+        </div>
+
         <footer>
             <div class="container">
                 <p>&copy; 2017 - blackhippo</p>
