@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd /var/www/test.webappky.cz/blackhippo
 sudo -u www-data kill $(cat /tmp/blackhippo.pid)
 sudo -u www-data rm /tmp/blackhippo.pid
 sudo -u www-data git pull
