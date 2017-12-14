@@ -15,6 +15,12 @@ namespace blackhippo.Controllers
             return View();
         }
 
+        public IActionResult Product(int id) 
+        {
+            ViewBag.id = id;
+            return View();
+        } 
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

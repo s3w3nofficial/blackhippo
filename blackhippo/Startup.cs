@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -47,6 +48,12 @@ namespace blackhippo
                 routes.MapRoute(
                     name: "eshop",
                     template: "{controller=Eshop}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    name: "product",
+                    template: "Product/{id}",
+                    defaults: new { controller = "Eshop", action = "Product" },
+                    constraints: new { id = new IntRouteConstraint() });
             });
         }
     }
