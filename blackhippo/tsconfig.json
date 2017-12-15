@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "sourceMap": true,
+        "removeComments": false,
+        "moduleResolution": "node",
+        "pretty": true,
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "outDir": "wwwroot/js",
+        "lib": [
+            "dom",
+            "es5",
+            "scripthost",
+            "es2015.iterable"
+        ]
+    },
+    "compileOnSave": true,
+    "exclude": [
+        "node_modules",
+        "typings/main",
+        "typings/main.d.ts"
+    ]
+}
