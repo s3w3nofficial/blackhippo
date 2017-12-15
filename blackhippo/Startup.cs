@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using blackhippo.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace blackhippo
 {
@@ -23,6 +25,9 @@ namespace blackhippo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddDbContext<ProductModel>(options =>
+            options.UseMySql(@"Server=localhost;Database=blackhippo;Uid=blackhippo;Pwd=blackhippo;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
